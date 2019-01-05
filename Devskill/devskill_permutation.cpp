@@ -18,15 +18,13 @@ int main() {
 			char ch=s[i];
 			int x=(int)ch;
 			arr[x]++;
-		}
+		} // end for
 		int counter=0;
 		for(int i=0;i<123;i++){
 			if(arr[i]>0){
 				counter++;
 			}
-		}
-		
-		//cout<<counter<<endl;
+		} //end for
 	
 		int arr2[counter];
 		int j=0;
@@ -36,24 +34,25 @@ int main() {
 				arr2[j]=arr[i];
 				j++;
 			}
-		}
+		} // end for
 		for(int i=0;i<counter;i++){
 			if(arr2[i]>1){
 				int r=arr2[i];
 				arr2[i]=factorial(r);
 			}
-		}
+		} // end for
 		
-		//cout<<""<<endl;
-		long long int h=factorial(s.size());
+		long long int h=factorial(s.size()); 
 		
 		for(int i=0;i<counter;i++){
 			h=h/(factorial(arr2[i]));
 		}
 		cout<<h<<endl;
-	}
+	} // end for
 	return 0;
-}
+} // end main
+
+// Function to perform factorial of a number
 int factorial(int n)
 {
     if(n > 1)
