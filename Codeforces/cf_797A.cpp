@@ -14,6 +14,7 @@ int main() {
 	int arr[k];
 	memset(arr,0,sizeof(arr));
 	int i=2;
+	
 	while(i<=y){
  
 		if(n%i==0){
@@ -25,23 +26,19 @@ int main() {
 			n=n/i;
 			counter++;
 			i=2;
-		}
-		
+		} // end if
 		else{
 			i++;
 		}
 		
- 
 		if(counter>k){
 			break;
 		}
 		
- 
-	}
+	} // end while
 	
 	long long int prod=1;
 	for(int i=0;i<k;i++){
-		
 		prod=prod*arr[i];
 	}
 
@@ -51,13 +48,12 @@ int main() {
 	}
 	if(flag==1){
 		for(int i=0;i<k;i++){
-		
-	cout<<arr[i]<<" ";
-	}
-	}
+			cout<<arr[i]<<" ";
+		}
+	} // end if
 	else{
 		cout<<-1<<"";
 	}
 	cout<<""<<endl;
 	return 0;
-}
+} // end main
