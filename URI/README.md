@@ -1,9 +1,5 @@
-# Programming Problems/Solutions
-Programming problems and their solutions coded in C++
+### To read the description of any problem, only change the problem number (1024) in the following URL.
 
-### Online Judge:
-- UVA
-- Codeforces
-- Hackerrank
-- URI
-- Devskill
+URL: urionlinejudge.com.br/repository/UOJ_1024_en.html
+
+
