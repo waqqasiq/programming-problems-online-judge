@@ -1,6 +1,7 @@
+// UVA 11799 - horror dash
 #include <bits/stdc++.h>
 using namespace std;
-//UVA horror dash
+
 int main() {
 	// your code goes here
 	int t;
