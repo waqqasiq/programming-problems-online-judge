@@ -17,9 +17,9 @@ int main() {
 		else{
 			int x=(a+b)/2;
 			int y=a-x;
-				printf("%d ",x);
-				printf("%d\n",y);
-		}
-	}
+			printf("%d ",x);
+			printf("%d\n",y);
+		}//end else
+	}//end for
 	return 0;
-}
+}//end main
