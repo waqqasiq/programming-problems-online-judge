@@ -10,24 +10,19 @@ int main() {
 		scanf("%d",&n);
 		int arr[n];
 		memset(arr,0,sizeof(arr));
-		//cout<<n<<endl;
 		int b;
 		scanf("%d",&b);
 		arr[0]=b;
 		int m=b;
-		//cout<<arr[0]<<endl;
 		
 		for(int j=1;j<n;j++){
 			int a;
 			scanf("%d",&a);
 			arr[j]=a;
 			m=max(m,arr[j]);
-			
-		}
+		}//end for
 		printf("Case %d: %d\n",i,m);
-		//printf("%d\n",m);
 		
-		
-	}
+	}//end outer for
 	return 0;
-}
+}//end main
