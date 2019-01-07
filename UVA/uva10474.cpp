@@ -18,7 +18,7 @@ int main() {
 			int a;
 			cin>>a;
 			arr[i]=a;
-		}
+		}//end for
 		sort(arr,arr+n);
 		int arr2[q];
 		memset(arr2,0,sizeof(arr2));
