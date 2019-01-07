@@ -1,6 +1,7 @@
+//UVA 10018 Reverse and Add
 #include <bits/stdc++.h>
 using namespace std;
-//UVA 10018 Reverse and Add
+
 int main() {
 	// your code goes here
 	int t;
@@ -14,51 +15,39 @@ int main() {
 		int r=1;
 		while(1){
 			long long int p=b;
-		//	cout<<b<<endl;
-		int counter=0;
-		while(b>0){
-			b=b/10;
-			counter++;
-			
-		}
-		counter--;
-		//cout<<counter<<endl;
-		int y=0;
-		int z=0;
-		
-		while(c>0){
-			y=c%10;
-			c=c/10;
-			z=z+y*pow(10,counter);
+			int counter=0;
+			while(b>0){
+				b=b/10;
+				counter++;
+
+			}
 			counter--;
-		}
-	//	cout<<z<<endl;
-		long long int sum=p+z;
-		//cout<<sum<<endl;
+			int y=0;
+			int z=0;
 		
-	long long 	int num=sum;
-		int dig=0;
-        long long int rev = 0;
-        while (num > 0)
-       {
-          dig = num % 10;
-          rev = rev * 10 + dig;
-          num = num / 10;
-       }
-      // cout<<rev<<endl;
-       if(rev==sum){
-       	cout<<r<<" "<<sum<<endl;
-       	break;
-       }
-       
-       b=sum;
-       c=sum;
-       r++;
-       
-		}
-       
-		
-		
-	}
+			while(c>0){
+				y=c%10;
+				c=c/10;
+				z=z+y*pow(10,counter);
+				counter--;
+			}
+			long long int sum=p+z;
+			long long int num=sum;
+			int dig=0;
+			long long int rev = 0;
+			while (num > 0){
+				  dig = num % 10;
+				  rev = rev * 10 + dig;
+				  num = num / 10;
+		       	}
+		       if(rev==sum){
+				cout<<r<<" "<<sum<<endl;
+				break;
+		       }
+		       b=sum;
+		       c=sum;
+		       r++;
+		}//end outer while
+	}//end outer for
 	return 0;
-}
+}//end main
